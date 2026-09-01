@@ -1,1 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>My Image Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>My Image Gallery</h1>
+
+        <p class="subtitle">
+            Explore beautiful images from nature, animals, travel and more.
+        </p>
+
+        <!-- Category Filters -->
+        <div class="filters">
+
+            <button class="filter-btn active" data-filter="all">
+                All
+            </button>
+
+            <button class="filter-btn" data-filter="nature">
+                Nature
+            </button>
+
+            <button class="filter-btn" data-filter="animals">
+                Animals
+            </button>
+
+            <button class="filter-btn" data-filter="travel">
+                Travel
+            </button>
+
+        </div>
+
+
+        <!-- Image Gallery -->
+        <div class="gallery">
+
+            <!-- Mountain -->
+            <div class="gallery-item" data-category="nature" data-index="0">
+
+                <img src="mountain.webp" alt="Mountain">
+
+                <div class="image-info">
+                    <h3>Mountain</h3>
+                    <p>Beautiful mountain landscape</p>
+                </div>
+
+            </div>
+
+
+            <!-- Forest -->
+            <div class="gallery-item" data-category="nature" data-index="1">
+
+                <img src="forest.webp" alt="Forest">
+
+                <div class="image-info">
+                    <h3>Forest</h3>
+                    <p>Peaceful green forest</p>
+                </div>
+
+            </div>
+
+
+            <!-- Beach -->
+            <div class="gallery-item" data-category="nature" data-index="2">
+
+                <img src="beach.webp" alt="Beach">
+
+                <div class="image-info">
+                    <h3>Beach</h3>
+                    <p>Beautiful sunny beach</p>
+                </div>
+
+            </div>
+
+
+            <!-- Tiger -->
+            <div class="gallery-item" data-category="animals" data-index="3">
+
+                <img src="tiger.webp" alt="Tiger">
+
+                <div class="image-info">
+                    <h3>Tiger</h3>
+                    <p>Majestic wild tiger</p>
+                </div>
+
+            </div>
+
+
+            <!-- Elephant -->
+            <div class="gallery-item" data-category="animals" data-index="4">
+
+                <img src="elephant.webp" alt="Elephant">
+
+                <div class="image-info">
+                    <h3>Elephant</h3>
+                    <p>Beautiful elephant</p>
+                </div>
+
+            </div>
+
+
+            <!-- Dog -->
+            <div class="gallery-item" data-category="animals" data-index="5">
+
+                <img src="dog.webp" alt="Dog">
+
+                <div class="image-info">
+                    <h3>Dog</h3>
+                    <p>Friendly pet dog</p>
+                </div>
+
+            </div>
+
+
+            <!-- City -->
+            <div class="gallery-item" data-category="travel" data-index="6">
+
+                <img src="city.webp" alt="City">
+
+                <div class="image-info">
+                    <h3>City</h3>
+                    <p>Beautiful city view</p>
+                </div>
+
+            </div>
+
+
+            <!-- Monument -->
+            <div class="gallery-item" data-category="travel" data-index="7">
+
+                <img src="monument.webp" alt="Monument">
+
+                <div class="image-info">
+                    <h3>Monument</h3>
+                    <p>Historic monument</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+
+        <span class="close-btn" id="closeBtn">&times;</span>
+
+        <button class="prev-btn" id="prevBtn">
+            &#10094;
+        </button>
+
+        <img id="lightboxImage" src="" alt="Large Image">
+
+        <button class="next-btn" id="nextBtn">
+            &#10095;
+        </button>
+
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+
+    </div>
+
+
+    <footer>
+        <p>CodeAlpha Internship - Image Gallery</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
